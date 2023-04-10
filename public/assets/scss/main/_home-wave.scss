@@ -1,0 +1,124 @@
+:root {
+    --bg-color: #fff;
+    --wave-color: #2c3e50;
+    --animation-time: 15s;
+    --max-height: 100px;
+    --circle-offset: -1.5%;
+    --wave-width: 54.7%;
+    --height-wave-up: 109%;
+    --height-wave-down: 100%;
+    --top-wave-up: 60%;
+    --top-wave-down: 40%;
+    --border-radius-right-up: 75% 40%;
+    --border-radius-left-up: 40% 75%; 
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: var(--wave-color);
+  }
+  
+  .container {
+    position: relative;
+    height: 75vh;
+    background: var(--bg-color);
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: var(--max-height);
+    background: var(--bg-color);
+    animation: beWavy var(--animation-time) infinite linear;
+  }
+  
+  .wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 25vw;
+    width: 100%;
+    height: var(--max-height);
+    background: var(--bg-color);
+    animation: beWavy var(--animation-time) infinite linear;
+    opacity: 50%;
+    
+  }
+  
+  .wave::before, .wave::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: var(--border-radius-right-up);
+    width: var(--wave-width);
+  }
+  
+  .wave::before {
+    height: var(--height-wave-up);
+    background-color: var(--wave-color);
+    right: var(--circle-offset);
+    top: var(--top-wave-up);
+    animation: beWavyBefore var(--animation-time) infinite step-end;
+  }
+  .wave::after {
+    height: var(--height-wave-down);
+    background-color: var(--bg-color);
+    left: var(--circle-offset);
+    top: var(--top-wave-down);
+    animation: beWavyAfter var(--animation-time) infinite step-end;
+  }
+  
+  
+  @keyframes beWavy {
+    0% {
+      animation-timing-function: ease-in;
+      height: var(--max-height);
+    }
+    25% {
+      animation-timing-function: ease-out;
+      height: 0;
+    }
+    50% {
+      animation-timing-function: ease-in;
+      height: var(--max-height);
+    }
+    75% {
+      animation-timing-function: ease-out;
+      height: 0;
+    }
+    100% {
+      animation-timing-function: ease-in;
+      height: var(--max-height);
+    }
+  }
+  
+  @keyframes beWavyBefore {
+    25% {
+      background-color: var(--bg-color);
+      height: var(--height-wave-down);
+      top: var(--top-wave-down);
+      border-radius: var(--border-radius-left-up);
+    }
+    75% {
+      background-color: var(--wave-color);
+      height: var(--height-wave-up);
+      top: var(--top-wave-up);
+      border-radius: var(--border-radius-right-up);
+    }
+  }
+  
+  @keyframes beWavyAfter {
+    25% {
+      background-color: var(--wave-color);
+      height: var(--height-wave-up);
+      top: var(--top-wave-up);
+      border-radius: var(--border-radius-left-up);
+    }
+    75% {
+      background-color: var(--bg-color);
+      height: var(--height-wave-down);
+      top: var(--top-wave-down);
+      border-radius: var(--border-radius-right-up);
+    }
+  }
