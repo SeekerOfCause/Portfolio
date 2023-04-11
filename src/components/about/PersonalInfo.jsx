@@ -7,8 +7,6 @@ const personalInfoContent = [
   { meta: "Nationality", metaInfo: "American", hasColor: "" },
   { meta: "Freelance", metaInfo: "Available", hasColor: "green" },
   { meta: "Address", metaInfo: "Jacksonville, FL", hasColor: "" },
-  { meta: "phone", metaInfo: "(904) 446-8884", hasColor: "" },
-  { meta: "Email", metaInfo: "micahel.maye@harrowingpleasantries.com", hasColor: "" },
 ];
 
 const PersonalInfo = () => {

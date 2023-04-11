@@ -11,9 +11,8 @@ const heroContent = {
   heroTitleName: "micahel maye",
   heroDesignation: "software developer",
   heroDescriptions: "I'm a skilled software engineer and full-stack developer based in the United States, with a strong focus on creating robust, efficient, and user-friendly systems. My passion for developing excellent software that has a positive impact on the lives of those around me drives my work every day.",
-  heroDescriptions2: "Whether it's building web applications, mobile apps, or desktop software, I'm dedicated to delivering exceptional results.",
-  heroDescriptions3: "Take a look at my portfolio and let's connect to discuss how I can help bring your next software project to life.",
-  heroBtn: "more about me",
+  heroDescriptions2: "Take a look at my portfolio and let's connect to discuss how I can help bring your next software project to life.",
+  heroBtn: "more",
 };
 
 const rocket = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-rocket-takeoff" viewBox="0 0 16 16">
@@ -35,25 +34,24 @@ const Hero = () => {
           className="col-lg-4 bg position-fixed d-none d-lg-block"
           style={{ backgroundImage: `url(${heroContent.heroImage})` }}
         ></div>
-        <div className="col-12 col-lg-8 offset-lg-4 home-details  text-center text-lg-start">
+        <div className="col-12 col-lg-8 offset-lg-4 home-details text-center text-lg-start">
           <div>
             <Image
               src={heroContent.heroMobileImage}
               className="img-fluid main-img-mobile d-sm-block d-lg-none"
               alt="hero man"
-              // style={{width:'100%',height:'100%'}}
+              style={{width:'35%',height:'auto'}}
             />
-            <h1 className="text-uppercase poppins-font">
-              {"I'm"} {heroContent.heroTitleName}
-              <span>{heroContent.heroDesignation}</span>
+            <h1 className="text-uppercase text-center">{heroContent.heroTitleName}
             </h1>
+            <h2 className="text-uppercase poppins-font text-muted text-center">{heroContent.heroDesignation}
+                </h2>
             <article>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
-            <p className="open-sans-font">{heroContent.heroDescriptions2} </p>
-            <p className="open-sans-font">{heroContent.heroDescriptions3}</p>
+            <p className="open-sans-font small">{heroContent.heroDescriptions2}</p>
             </article>
             <button className="button" onClick={toggleModalOne}>
-              <span className="button-text">{heroContent.heroBtn}</span>
+              <span className="button-text button-dark">{heroContent.heroBtn}</span>
               <span className="button-icon">{rocket}</span>
             </button>
           </div>

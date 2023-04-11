@@ -667,22 +667,18 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-weight: 700;
   margin: 18px 0 10px;
   position: relative;
-  padding-left: 50px;
 }
 
-.home .home-details h1:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 29px;
-  height: 4px;
-  width: 40px;
-  border-radius: 10px;
-}
 
 .home .home-details h1 span {
   color: #fff;
   display: block;
+}
+
+.home .home-detiails h2 {
+  color:rgba(255, 255, 255, 0.77);
+  display: block;
+  font-weight: 400;
 }
 
 .home .home-details h6 {
@@ -2057,32 +2053,7 @@ button:focus {
   }
 }
 
-.demo-sticker {
-  background: #2b2a2a;
-  position: fixed;
-  right: 30px;
-  top: 20px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
-  @media (max-width: 991px) {
-    right: 15px;
-  }
-  a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer !important;
-    text-decoration: none;
-  }
-}
+
 .green {
   color: #5be85b;
 }

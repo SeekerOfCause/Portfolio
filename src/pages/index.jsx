@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../layout/wrapper";
-import Home from "./home-dark";
+import Home from "./home";
 
 const MainRoot = () => {
   return (

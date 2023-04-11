@@ -3,6 +3,7 @@ import Achievements from "./Achievements";
 import Education from "./Education";
 import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
+import ContInfo from "./ContactInfo";
 import Skills from "./Skills";
 import cv from "../../../public/assets/img/cv.webp";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
@@ -18,8 +19,7 @@ const index = () => {
           <div className="col-xl-6 col-lg-5 col-12">
             <div className="row">
               <div className="col-12">
-                
-              </div>
+                </div>
               {/* End .col */}
 
               <div className="col-12 d-block d-sm-none">
@@ -33,7 +33,9 @@ const index = () => {
 
               <div className="col-12">
                 <PersonalInfo />
+                <ContInfo />
               </div>
+
               {/* End personal info */}
 
               <div className="col-12 mt-1">
