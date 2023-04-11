@@ -11,6 +11,14 @@ import Contact from "../components/Contact";
 import Blog from "../components/blog/Blog";
 import SwitchDark from "../components/switch/SwitchDark";
 
+const blogIntro = [
+  "Learning how to build this webite, and put a portfolio together in general, has been quite the journey.",
+];
+
+const blogIntroCont = [
+  "I've decidted to record what I've done in these blog posts, mostly because this all involved a lot of restarting from the beginning and instructions are nice :)",
+];
+
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
   { icon: "fa-user", menuName: "About" },
@@ -138,15 +146,21 @@ const portfolioSite = () => {
             {/* Blog Content Starts */}
             <TabPanel className="blog">
               <div
-                className="title-section text-start text-sm-center "
+                className="title-section text-start text-sm-center container p-4"
                 data-aos="fade-up"
                 data-aos-duration="1200"
               >
-                <h1>
-                  my <span>blog</span>
+                <h1 className="p-2">
+                  my <span>journey</span>
                 </h1>
-                <span className="title-bg">posts</span>
+                <h3>
+                  <div className="text-sm-center p-4">{blogIntro}</div>
+                </h3>
+                <h4>
+                  <div className="small p-5">{blogIntroCont}</div>
+                </h4>
               </div>
+              <div className="heading-section"></div>
               <div
                 className="container"
                 data-aos="fade-up"
