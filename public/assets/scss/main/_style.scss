@@ -48,12 +48,12 @@ html {
   height: 100%;
 }
 :root {
-  --main-primary-color: #5c2e45;
+  --main-primary-color: #a9a9a9
 }
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
-  color: #76585c;
+  color: #9a9398;
   font-weight: 500;
   line-height: 1.6;
   position: relative;
@@ -61,7 +61,8 @@ body {
   background-position: center;
   height: 100%;
   width: 100%;
-  background-color: #b3d7fb;
+  background: rgb(103,53,106);
+  background: linear-gradient(90deg, rgba(103,53,106,1) 0%, rgba(157,125,196,1) 98%);
 }
 
 .poppins-font {
@@ -396,7 +397,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   position: relative;
   z-index: 1;
   padding: 16px 70px 16px 35px;
-  font-size: 15px;
+  font-size: px;
   font-weight: 600;
   color: #fff;
   background-color: transparent;
@@ -667,18 +668,14 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   font-weight: 700;
   margin: 18px 0 10px;
   position: relative;
+  
+  color:rgb(47, 15, 30);
 }
 
 
 .home .home-details h1 span {
   color: #fff;
   display: block;
-}
-
-.home .home-detiails h2 {
-  color:rgba(255, 255, 255, 0.77);
-  display: block;
-  font-weight: 400;
 }
 
 .home .home-details h6 {
@@ -692,6 +689,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   margin: 15px 0 28px;
   font-size: 16px;
   line-height: 35px;
+  color:rgb(31, 20, 20);
 }
 
 /*** About ***/
@@ -1337,28 +1335,12 @@ body.light .contact .custom-span-contact a {
 
 /* [ RESPONSIVE DESIGN STYLES ] */
 
-@media (min-width: 1351px) {
-  .portfolio .container-portfolio .grid {
-    text-align: left;
-  }
-}
 
 
-
-// @media (max-width: 1200px) and (min-width: 992px) {
-//   .home .home-details h1 {
-//     font-size: 42px;
-//     line-height: 52px;
-//   }
-// }
-
-// @media (max-width: 1100px) and (min-width: 992px) {
-//   .home .home-details > div {
-//     max-width: 450px;
-//   }
-// }
+/* Home Page response */
 
 
+    /* Large Screen */
 
 @media (min-width: 2301px) {
   .home .home-details > div {
@@ -1378,10 +1360,11 @@ body.light .contact .custom-span-contact a {
   }
 
   .home .home-details p {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 80px;
   }
 }
+    /* Medium Screen */
 
 @media (min-width: 1601px) and (max-width: 2300px) {
   .home .home-details > div {
@@ -1401,16 +1384,12 @@ body.light .contact .custom-span-contact a {
   }
 
   .home .home-details p {
-    font-size: 30px;
+    font-size: 23.5px;
     line-height: 60px;
   }
 }
 
-@media (min-width: 993px) and (max-width: 1600px) {
-  .home .home-details > div {
-    max-width: 600px;
-  }
-}
+    /* Small Screen */
 
 @media (min-width: 992px) {
   .home .home-details-container {
@@ -1582,6 +1561,12 @@ body.light .contact .custom-span-contact a {
     position: absolute;
     left: 50px;
     font-weight: 400;
+  }
+
+  @media (min-width: 1351px) {
+    .portfolio .container-portfolio .grid {
+      text-align: left;
+    }
   }
 
   .portfolio .grid li {

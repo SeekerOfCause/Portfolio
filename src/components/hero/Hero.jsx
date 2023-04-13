@@ -44,7 +44,7 @@ const Hero = () => {
             />
             <h1 className="text-uppercase text-center">{heroContent.heroTitleName}
             </h1>
-            <h2 className="text-uppercase poppins-font text-muted text-center">{heroContent.heroDesignation}
+            <h2 className="text-uppercase text-dark fw-bolder text-center">{heroContent.heroDesignation}
                 </h2>
             <article>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
