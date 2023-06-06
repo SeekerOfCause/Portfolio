@@ -2,25 +2,22 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "   2018 - Present",
-    position: " Web Developer",
-    compnayName: "Envato",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "2023 - Present",
+    position: "Software Engineer",
+    compnayName: "Rise8",
+    details: ``,
   },
   {
-    year: "2013 - 2018",
+    year: "2020 - 2023",
     position: " UI/UX Designer",
-    compnayName: "Themeforest",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    compnayName: "US Navy",
+    details: `MH-60 Avionics Testing Lead. Schedule and perform prototype testing on not yet released equipement. Plan and schedule logistis for prototype equipment. Complie data for delivery upstream to stakeholders.`,
   },
   {
-    year: "2005 - 2013",
-    position: "Consultant",
-    compnayName: "Videohive",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "2014-2020",
+    position: "Avionics Technician",
+    compnayName: "US Navy",
+    details: `Plan, schedule, perform, and track maintenance on MH-60 avionics equipment. Anticipate future needs of stakeholders to effectivly plan maintenance schedules to allow for consistent asset availablilty at all times.`,
   },
 ];
 

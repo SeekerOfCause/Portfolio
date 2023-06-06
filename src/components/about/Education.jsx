@@ -2,25 +2,22 @@ import React from "react";
 
 const educationContent = [
   {
-    year: "2015",
-    degree: "ENGINEERING DEGREE",
-    institute: "OXFORD UNIVERSITY",
-    details: `  Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore
-        adipisicing elit`,
+    year: "2025 (PROJECTED)",
+    degree: "M.S. COMPUTER SCIENCE",
+    institute: "UNIVERSITY OF NORTH FLORIDA",
+    details: `Data analytics, machine learning, data mining, ux design, data visualization, software engineering, networking, cloud computing, computer architecture.`,
   },
   {
-    year: "2012",
-    degree: "MASTER DEGREE",
-    institute: "KIEV UNIVERSITY",
-    details: `Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol
-        elit, tempor incididunt`,
+    year: "2023",
+    degree: "UNDERGRADUATE CERTIFICATE - COMPUTER SCIENCE",
+    institute: "COLORADO STATE UNIVERSITY - GC",
+    details: `Select and apply software engineering topics and concepts to solve business problems; Develop conceptual models for accessing and updating stored information; Design, implement, and analyze algorithms using Java; Write software programs that securely manage resources across different operating systems; Compare and contrast platform-based development environments, Analyze programming language requirements for multiple platforms`,
   },
   {
-    year: "2009",
-    degree: "BACHELOR DEGREE ",
-    institute: "TUNIS HIGH SCHOOL",
-    details: `Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur
-        elit, sed do eiusmod tempor duntt`,
+    year: "2022",
+    degree: "BACHELOR DEGREE - APPLIED MATHEMATICS",
+    institute: "SOUTHERN NEW HAMPSHIRE UNIVERSITY",
+    details: `Calculus (differential and integral), linear algebra, differential equations, probability theory, mathematical modeling, numerical methods, optimization, mathematical statistics, mathematical finance, computational mathematics, mathematical analysis of algorithms, and interdisciplinary coursework in computer science and engineering. `,
   },
 ];
 

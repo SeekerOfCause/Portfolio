@@ -5,11 +5,13 @@ import Experience from "./Experience";
 import PersonalInfo from "./PersonalInfo";
 import ContInfo from "./ContactInfo";
 import Skills from "./Skills";
-import cv from "../../../public/assets/img/cv.webp";
 import heroImgMobile from "../../../public/assets/img/hero/img-mobile.jpg";
 import Image from "next/image";
 
+
 const index = () => {
+  const fileUrl = "./cv.pdf";
+
   return (
     <section className="main-content ">
       <div className="container">
@@ -18,8 +20,7 @@ const index = () => {
 
           <div className="col-xl-6 col-lg-5 col-12">
             <div className="row">
-              <div className="col-12">
-                </div>
+              <div className="col-12"></div>
               {/* End .col */}
 
               <div className="col-12 d-block d-sm-none">
@@ -39,7 +40,7 @@ const index = () => {
               {/* End personal info */}
 
               <div className="col-12 mt-1">
-                <a className="button" href={cv} download>
+                <a className="button" href={fileUrl} target="_blank" rel="noopener noreferrer" download>
                   <span className="button-text">Download CV</span>
                   <span className="button-icon fa fa-download"></span>
                 </a>
