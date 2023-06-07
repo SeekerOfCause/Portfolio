@@ -11,33 +11,27 @@ import Image9 from "../../../public/assets/img/portfolio/project-9.jpg";
 const PortfolioData = [
   {
     id: 1,
-    type: "mockup project",
+    type: "JS Calculator",
     image: Image1,
-    tag: ["mockup"],
     delayAnimation: "0",
     modalDetails: [
       {
-        project: "Website",
+        project: "Calculator",
         client: "Envato",
-        language: "HTML, CSS, Javascript",
-        preview: "www.envato.com",
-        link: "https://www.envato.com/",
+        language: "HTML, CSS, Javascript, TypeScript",
       },
     ],
   },
   {
     id: 2,
-    type: "youtube project",
+    type: "Generator",
     image: Image2,
-    tag: ["video"],
     delayAnimation: "100",
     modalDetails: [
       {
-        project: "video",
+        project: "Fantasy Weapon Generator",
         client: "Videohive",
-        language: " Adobe After Effects",
-        preview: "www.videohive.net",
-        link: "https://www.videohive.net",
+        language: "HTML, CSS, TypeScript",
       },
     ],
   },

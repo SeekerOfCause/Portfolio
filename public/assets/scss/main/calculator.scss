@@ -1,0 +1,183 @@
+.gridContainer {
+    display: grid;
+    grid-template-rows: 10% 18% 18% 18% 18% 18%;
+    gap: 2px;
+    min-height: 575px;
+    min-width: 325px;
+  }
+  
+  .calcDisp {
+    display: flex;
+    position: relative;
+    align-content: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    text-overflow: ellipsis;
+    border: 1px solid rgb(176, 175, 175);
+    background: linear-gradient(to bottom, transparent, rgb(214, 214, 214))
+      rgb(238, 238, 238);
+    box-shadow: 0px 0px 4px rgb(100, 99, 99);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  .history {
+      display: grid;
+      position: relative;
+      gap: 2px;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 7;
+  }
+  
+  .calcDispText {
+    padding-right: 8px;
+    font-weight: 600;
+    font-size: 25px;
+    width: 100%;
+    text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: absolute;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .calcRowOne {
+    display: grid;
+    position: relative;
+    gap: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  
+  .calcRowTwo {
+    display: grid;
+    position: relative;
+    gap: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  
+  .calcRowThree {
+    display: grid;
+    position: relative;
+    gap: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  
+  .calcRowFour {
+    display: grid;
+    position: relative;
+    gap: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+  
+  .calcRowFive {
+    display: grid;
+    position: relative;
+    gap: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+  
+  .blankItems {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .item1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  
+  .item2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  
+  .item3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+  
+  .item4 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+  }
+  
+  .numberPad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 4px;
+    text-shadow: 0px 0px 2px rgb(85, 84, 84);
+    font-size: 50px;
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: 0px 0px 4px rgb(122, 122, 122);
+    border: 1px solid rgb(201, 194, 194);
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-start-rgb))
+      )
+      rgb(var(--background-end-rgb));
+  }
+  
+  .numberPadAC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 4px;
+    text-shadow: 0px 0px 2px rgb(85, 84, 84);
+    font-size: 40px;
+    min-width: 100%;
+    min-height: 100%;
+    box-shadow: 0px 0px 4px rgb(122, 122, 122);
+    border: 1px solid rgb(201, 194, 194);
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-start-rgb))
+      )
+      rgb(var(--background-end-rgb));
+  }

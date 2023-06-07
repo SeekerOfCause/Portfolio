@@ -32,5 +32,10 @@
   "devDependencies": {
     "file-loader": "^6.2.0",
     "webpack": "^5.85.1"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
   }
 }

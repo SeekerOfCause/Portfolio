@@ -64,7 +64,6 @@ const portfolioSite = () => {
                   <h1>
                     ABOUT <span>ME</span>
                   </h1>
-                  <span className="title-bg">Resume</span>
                 </div>
                 {/* End title */}
                 <AboutMain />
@@ -82,7 +81,6 @@ const portfolioSite = () => {
                 <h1>
                   my <span>portfolio</span>
                 </h1>
-                <span className="title-bg">works</span>
               </div>
               {/* End title */}
               <Portfolio />
@@ -99,7 +97,6 @@ const portfolioSite = () => {
                 <h1>
                   get in <span>touch</span>
                 </h1>
-                <span className="title-bg">contact</span>
               </div>
               <div
                 className="container"

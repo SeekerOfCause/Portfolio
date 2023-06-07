@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import CloseImg from "../../../../../public/assets/img/cancel.svg";
 import PortfolioData from '../../portfolioData';
+import CalculatorPad from "../../../../pages/calc_page.js"
 
 const ModalOne = ({modalId,setGetModal}) => {
   return (
@@ -28,13 +29,6 @@ const ModalOne = ({modalId,setGetModal}) => {
                           </span>
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
-                          <i className="fa fa-user-o pr-2"></i>
-                          Client :{" "}
-                          <span className="ft-wt-600 uppercase">
-                            {details.client}
-                          </span>
-                        </div>
-                        <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-code pr-2"></i>
                           Language :{" "}
                           <span className="ft-wt-600 uppercase">
@@ -43,23 +37,15 @@ const ModalOne = ({modalId,setGetModal}) => {
                         </div>
                         <div className="col-12 col-sm-6 mb-2">
                           <i className="fa fa-external-link pr-2"></i>
-                          Preview :{" "}
-                          <a
-                            className="preview-link"
-                            target="_blank"
-                            rel="noopener noreferrer nofollow"
-                            href={details.link}
-                          >
-                            {details.preview}
-                          </a>
                         </div>
                       </div>
                     );
                   })}
+                  
                 </div>
-                <figure className="modal__img">
-                  <Image src={item.image} alt="portfolio project demo" />
-                </figure>
+                <div className="flex-fill">
+                  <CalculatorPad></CalculatorPad>
+                  </div>
 
                 <button
                   className="close-modal"

@@ -3,21 +3,35 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+// const [from_name, setFrom] = useState("");
+// const [to_name, setTo] = useState("");
+// const [message, setMessage] = useState("");
+// const [reply_to, setReplyTo] = useState("");
+
 const Contact = () => {
   const form = useRef();
 
+  //setFrom(form.current.from_name.)
+
   const sendEmail = (e) => {
     e.preventDefault();
+    var formData = new FormData(e.target);
+    const form_values = Object.fromEntries(formData);
+    console.log('form values', {from_name: form_values.from_name,
+      to_name: "Michael",
+      message: form_values.message,
+      reply_to: form_values.user_email,
+      })
     emailjs
       .sendForm(
-        "service_n4mkhz9",
-        "template_ugoztxr",
+        "service_56xuvb6",
+        "template_f2fujbc",
         form.current,
-        "user_vYmDSd9PwIuRXUQEDjYwN"
+        "a7KqsHdC_LEPXwkSs"
       )
       .then(
         (result) => {
-          console.log(result)
+          console.log(result);
           toast.success("Message Sent Successfully!", {
             position: "top-right",
             autoClose: 2000,
@@ -49,7 +63,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12 col-md-6">
             <div className="form-group">
-              <input type="text" name="name" placeholder="YOUR NAME" required />
+              <input type="text" name="from_name" placeholder="YOUR NAME" required />
             </div>
           </div>
           {/* End .col */}
@@ -58,7 +72,7 @@ const Contact = () => {
             <div className="form-group">
               <input
                 type="email"
-                name="user_email"
+                name="reply_to"
                 placeholder="YOUR EMAIL"
                 required
               />

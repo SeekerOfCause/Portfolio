@@ -12,7 +12,7 @@ const heroContent = {
   heroDesignation: "software developer",
   heroDescriptions: "I'm a skilled software engineer and full-stack developer based in the United States, with a strong focus on creating robust, efficient, and user-friendly systems. My passion for developing excellent software that has a positive impact on the lives of those around me drives my work every day.",
   heroDescriptions2: "Take a look at my portfolio and let's connect to discuss how I can help bring your next software project to life.",
-  heroBtn: "more",
+  heroBtn: "Fun Facts",
 };
 
 const rocket = <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-rocket-takeoff" viewBox="0 0 16 16">
